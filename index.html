@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L. Parkington</title>
+    
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .nav-logo {
+            text-decoration: dashed;
+            font-size: x-large;
+            color: blue;
+            margin-left: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+
+        }
+
+        .home {
+            text-decoration: dashed;
+            font-size: x-large;
+            color: black;
+            margin-top: -10px;
+
+
+
+        }
+
+        .company {
+            text-decoration: dashed;
+            font-size: x-large;
+            color: black;
+            margin-top: -10px;
+        }
+
+        .Sign-up {
+            text-decoration: dashed;
+            font-size: x-large;
+            color: black;
+            margin-top: -10px;
+
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: right;
+            margin-top: -10px;
+            gap: 40px;
+            margin-right: 40px;
+            
+
+
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+
+
+
+
+
+        .h {
+            color: blue;
+            font-size: 100px;
+            margin-left: 50px;
+        }
+
+        .p1 {
+            font-size: 20px;
+            margin-left: 50px;
+            margin-top: -50px;
+            color: rgb(74, 72, 72);
+        }
+
+        .img {
+            margin-left: 830px;
+            width: 650px;
+            height: 850px;
+            border-radius: 10px;
+            margin-top: 50px;
+
+        }
+
+        .im {
+            margin-top: -420px;
+
+
+        }
+
+        .buton {
+            margin-left: 50px;
+            padding: 13px;
+            padding-right: 100px;
+            border-radius: 40px;
+            color: white;
+            background-color: blue;
+        }
+
+
+
+
+        .im2 {
+            width: 700px;
+            height: 400px;
+            margin-top: -450px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+
+        .blue {
+            background-color: blue;
+            padding: 100px;
+
+
+
+        }
+
+        .h-blue {
+            font-size: 70px;
+            color: white;
+
+
+        }
+
+        .im3 {
+            width: 250px;
+            height: 350px;
+        }
+
+        .im4 {
+            width: 250px;
+            height: 350px;
+            margin-left: 30px;
+        }
+
+        .p-blue {
+            font-size: x-large;
+            color: white;
+            margin-left: 650px;
+        }
+
+        .p-blue1 {
+            font-size: x-large;
+            color: white;
+            margin-left: 650px;
+            margin-top: -170px;
+
+        }
+
+        .Contact-us {
+            width: 150px;
+            padding: 13px;
+            border-radius: 50px;
+            background-color:red;
+            color: black;
+            margin-left: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+            
+        }
+        .Contact-us:hover{
+           color: white;
+            transition: 0.3s;
+        }
+                                    
+
+        .btn2 {
+            margin-left: 600px;
+            margin-top: 150px;
+           
+
+        }
+
+        .img-div {
+            margin-top: -190px;
+        }
+
+        .hr1 {
+            border-top: 2px solid black;
+
+        }
+        .nav1{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: aliceblue ;
+        }
+        .white{
+            background-color: white;
+            padding: 100px  ;
+        }
+        .white-h1{
+            color: blue;
+            font-size: 50px;
+            
+        }
+        .white-p{
+            color: black;
+        }
+        .img3{
+            width: 300px;
+            margin-top: 150px;
+            display: flex;
+            
+
+        }
+        .p3{
+            color: blue;
+           
+            
+            
+        }
+        .p4{
+            color: blue;
+            font-size: 20px;
+        }
+        .p5{
+            color: black;
+            font-size: 18px;
+            color: rgb(82, 78, 78);
+        }
+      
+
+       
+       .img4{
+        width: 300px;
+        margin-left: 540px;
+        display: flex;
+        margin-top: -440px;
+        
+       }
+       .p6{
+        margin-left: 560px;
+        margin-top: 15px;
+        color: blue;
+       }
+       .p7{
+        margin-left: 560px;
+        font-size: 20px;
+        color: blue;
+       }
+        .p8{
+            margin-left: 560px;
+            font-size: 18px;
+            color: rgb(82, 78, 78);
+        }
+        .img5{
+            width: 300px;
+            margin-left: 1050px;
+            display: flex;
+            margin-top: -440px;
+
+        }
+        .p9{
+            margin-left: 1054px;
+            color: blue;
+        }
+        .p10{
+            margin-left: 1054px;
+            font-size: 18px;
+            color: blue;
+
+        }
+        .p11{
+            margin-left: 1054px;
+             color: rgb(82, 78, 78);
+             font-size: 18px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .buton5{
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 50px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        /* ============ MOBILE ONLY – ფიქსი დიდი ფოტოსთვის + ყველაფერი ლამაზად ============ */
+@media screen and (max-width: 768px) {
+
+    /* ნავბარი უცვლელი რჩება — შენი სურვილისამებრ */
+
+    /* მთავარი სათაური და ტექსტი */
+    .h {
+        font-size: 48px;
+        margin-left: 20px;
+        text-align: left;
+        margin-top: 100px; /* ნავბარის ქვემოდან მეტი ადგილი */
+    }
+    .p1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* აი აქ არის მთავარი ფიქსი — დიდი ფოტო აღარ გადაფარავს ტექსტს! */
+    .im {
+        margin-top: 40px !important; /* აღარ არის -420px */
+    }
+    .img {
+        width: 92%;
+        max-width: 500px;
+        height: auto !important;
+        margin: 30px auto 50px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    /* მეორე ფოტო */
+    .im2 {
+        width: 92%;
+        max-width: 600px;
+        height: auto;
+        margin: 50px auto;
+        display: block;
+        border-radius: 12px;
+    }
+
+    /* ლურჯი სექცია */
+    .blue {
+        padding: 80px 20px;
+        text-align: center;
+    }
+    .h-blue {
+        font-size: 42px;
+    }
+    .p-blue, .p-blue1 {
+        margin-left: 0 !important;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .btn2 {
+        margin: 50px auto 0 !important;
+        text-align: center;
+    }
+    .Contact-us {
+        margin: 0 auto;
+        display: block;
+        width: 220px;
+        padding: 16px;
+        font-size: 18px;
+    }
+    .img-div {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+    .im3, .im4 {
+        width: 92%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 12px;
+        margin-left: 0 !important;
+    }
+
+    /* თეთრი სექცია */
+    .white {
+        padding: 80px 20px;
+        text-align: center;
+    }
+    .white-h1 {
+        font-size: 36px;
+    }
+    .img3, .img4, .img5 {
+        width: 92%;
+        max-width: 450px;
+        margin: 80px auto 25px !important;
+        display: block;
+        border-radius: 12px;
+    }
+    .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11 {
+        margin: 0 auto 30px;
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+/* ძალიან პატარა ეკრანებისთვის */
+@media screen and (max-width: 480px) {
+    .h { font-size: 38px; margin-top: 80px; }
+    .h-blue { font-size: 36px; }
+    .white-h1 { font-size: 32px; }
+    .img { max-width: 100%; margin: 20px auto 40px; }
+}
+
+
+.navbar a{
+    color: black;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color: blue;
+
+}
+        
+    
+        
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav1">
+
+
+            <div class="logo">
+                <a class="nav-logo" href="#">L. Parkington</a>
+
+            </div>
+
+            <div class="navbar">
+                <a class="home" href="#">Home</a>
+                <a class="company" href="#about">About us</a>
+                <a id="#" class="Sign-up" href="signup.html">Sign up</a>
+
+            </div>
+           
+                <hr class="hr1">
+           
+    </header>
+
+
+
+
+    <div>
+        <h1 class="h">Tailored <br> Experiences</h1>
+        <p class="p1">Immerse yourself in the vibrant tapestry of cultures <br> with our expertly curated tours,
+            designed to create <br>
+            meaningful connections and lasting memories.</p>
+            
+    </div>
+
+    <div class="im">
+        <img class="img" src="img/11062b_7dd828720f08412fa10f189b17ded7dc~mv2.avif" alt="">
+    </div>
+    <div>
+        <img class="im2" src="img/88aac0_1d5162d4e3964b27924d53ee5339efc5~mv2.avif" alt="">
+    </div>
+    <div class="blue">
+        <h1 class="h-blue">
+            Cultural Journeys
+        </h1>
+        <p class="p-blue">
+            Embark on thrilling adventures to stunning <br> destinations, where each experience is careful <br>
+            lycrafted to ignite your sense of wonder and exploration.
+        </p>
+        <p class="p-blue1">
+            Adventure Escapes
+        </p>
+        <div class="btn2">
+           <a href="company.htm"><button class="Contact-us">Company</button></a> 
+        </div>
+        <div class="img-div">
+            <img class="im3" src="img/88aac0_4cfed56ef2fb4084acc9bb84f68b1f12~mv2.jpeg" alt="">
+            <img class="im4" src="img/88aac0_418d71561a064b129fb04b30a62b7b82~mv2.jpeg" alt="">
+
+        </div>
+      
+
+    </div>
+    <div class="white" id="about">
+        <h1 class="white-h1">
+            Features That MakeL. <br> Parkington Tours Stand Out
+        </h1>
+        <p class="white-p">
+            Personalized Itineraries Tailored Travel Plans
+        </p>
+        <p class="p2">
+            <br>
+            Whether you seek cultural landmarks, culinary experiences, or off-the-beaten-path <br> adventures, our team ensures every detail of your trip is uniquely yours.
+
+        </p>
+        <img class="img3" src="img/Guided Hike.avif" alt="">
+        <p class="p3">
+            Expert
+
+        </p>
+        <p class="p4">
+            Expert Local Guides
+
+
+        </p>
+        <p class="p5">
+            Authentic Insights Our experienced local <br> guides are passionate about their regions <br> and provide an insider’s perspective on the <br> history, culture, and hidden gems of each <br> destination. Their expertise transforms <br> your journey into an enriching and <br> unforgettable experience.
+
+        </p>
+        <img  class="img4" src="Contact_comp-m3br5er22.avif" alt="">
+        <p class="p6">
+            Unique
+
+        </p>
+        <p class="p7">
+            Unique Adventures
+
+        </p>
+        <p class="p8">
+            Memorable Experiences From hot air <br> balloon rides over scenic landscapes <br> to private cultural workshops, we <br> offer extraordinary activities that <br> turn your travels into lifelong <br> memories. Each adventure is <br> designed to inspire and amaze.
+
+        </p>
+        <img class="img5" src="Features_comp-m7hh0aai3.avif" alt="">
+        <p class="p9">
+            Immersive
+        </p>
+        <p class="p10">
+            Cultural Experiences
+        </p>
+        <p class="p11">
+            The Adventure Series is perfect for <br> outdoor enthusiasts seeking thrilling aerial experiences. With durable construction and versatile features, these drones are ideal companions for capturing adventures from a unique perspective.
+
+        </p>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

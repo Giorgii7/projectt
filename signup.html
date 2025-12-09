@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        
+        body {
+    background: linear-gradient(135deg, #05ffff, #001a80);
+    background-image: url(kk.avif);
+}
+.div1{
+    background-color: #001a80;
+    width: 600px;
+    height: 600px;
+    margin-left: 450px;
+    margin-top: 55px;
+    border-radius: 50px;
+    
+}
+.h1{
+    color: white;
+    font-size: 70px;
+    margin-left: 170px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.inp1{
+    margin-left: 70px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color:aqua;
+    
+}
+.inp2{
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 70px;
+    background-color: #05ffff;
+}
+.inp3{
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 430px;
+    background-color: #05ffff;
+    
+}
+.inp4{
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 70px;
+    margin-top: 50px;
+    background-color: #05ffff;
+}
+.inp5{
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 70px;
+    width:170px;
+    background-color: #05ffff;
+}
+.btn1{
+    padding: 15px;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    
+}
+.btn1:hover{
+    color: white;
+    transition: 0.3s;
+    background-color: red;
+}
+::placeholder{
+    color: black;
+}
+
+ .navbar{
+            display: flex;
+            justify-content: end;
+            gap: 70px;
+            margin-top: -50px;
+ }
+
+        .home{
+            font-size:25px;
+            text-decoration: dashed;
+            color: white;
+            margin-top: 55px;
+
+            
+        }
+            
+            
+
+        
+        .about-us{
+         font-size: 25px;
+            text-decoration: dashed;
+            color: white;
+            margin-top: 55px;
+            
+        }
+        .Sign-up{
+             font-size: 25px;
+            text-decoration: dashed;
+            color: white;
+            margin-top: 55px;
+            margin-right: 50px;
+        }
+        .navbar a{
+    color: aqua;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color: white;
+
+}
+            /* ================== SIGN-UP PAGE – MOBILE RESPONSIVE ================== */
+@media screen and (max-width: 768px) {
+
+    /* ნავბარი — ჰორიზონტალური, მაგრამ ცენტრში და პატარა */
+    .navbar {
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .home, .about-us, .Sign-up {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-right: 0 !important;
+    }
+
+    /* მთავარი ფორმის ყუთი — ცენტრში, სრული სიგანე */
+    .div1 {
+        width: 92%;
+        max-width: 500px;
+        height: auto;
+        min-height: 650px;
+        margin: 80px auto 50px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 40px 20px;
+        border-radius: 40px;
+        text-align: center;
+    }
+
+    .h1 {
+        font-size: 48px;
+        margin-left: 0 !important;
+        margin-bottom: 30px;
+    }
+
+    /* ინფუთები — ერთი სვეტი, დიდი და მოსახერხებელი */
+    .inp1, .inp2, .inp3, .inp4, .inp5 {
+        width: 100% !important;
+        max-width: 420px;
+        margin: 18px auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+        padding: 16px;
+        font-size: 18px;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .inp2 {
+        margin-left: auto !important;
+    }
+
+    /* ღილაკი */
+    .btn1 {
+        width: 100%;
+        max-width: 420px;
+        margin: 40px auto 20px !important;
+        margin-left: auto !important;
+        padding: 18px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* ფონი და ფერები უკეთესად ჩანდეს მობილურზე */
+    body {
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h1 { font-size: 42px; }
+    .home, .about-us, .Sign-up { font-size: 18px; }
+    .navbar { gap: 25px; }
+    .div1 { 
+        margin-top: 60px !important; 
+        padding: 30px 15px;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+     <div class="navbar">
+        <a class="home" href="index.html">Home</a>
+        <a class="about-us" href="#about">About us</a>
+        <a class="Sign-up" href="signup.html">Sign-up</a>
+
+    </div>
+    <hr class="hr2">
+    <div class="div1">
+        <h1 class="h1">
+            Sign up
+        </h1>
+        <div class="inp">
+            <input class="inp1" type="text" placeholder="Your name" required>
+            <input class="inp2" type="text" placeholder="Your Lastname" required>
+            <br>
+            <input class="inp3" type="email" placeholder="Your email">
+            <br>
+            <input class="inp4" type="tel" placeholder="Your Phone" required>
+            <input class="inp5" type="date" placeholder="Your Date" required>
+            <br>
+            <button class="btn1">Sign Up</button>
+
+        </div>
+    </div>
+    
+</body>
+</html>

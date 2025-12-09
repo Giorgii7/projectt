@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <style>
+        body{
+            margin: 0;
+
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .navbar{
+            display: flex;
+            justify-content:end;
+            gap: 70px;
+            margin-right: 100px;
+            
+        }
+        .nav{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: white;
+        }
+        .home{
+            font-size: 25px;
+            text-decoration: dashed;
+            color: black;
+            margin-top: 20px;
+        }
+        .about-us{
+            font-size: 25px;
+            text-decoration: dashed;
+            color: black;
+            margin-top: 20px;
+        }
+        .Sign-up{
+            font-size: 25px;
+            text-decoration: dashed;
+            color: black;
+             margin-top: 20px;
+        }
+        .h1{
+            font-size: 80px;
+            color: blue;
+            text-decoration: dashed;
+            margin-top: 100px;
+        }
+        .p2{
+            margin-left: 700px;
+            color: blue;
+            margin-top: 10px;
+        }
+        .p3{
+            font-size: 25px;
+            color: black;
+            margin-left: 700px;
+        }
+        .im1{
+            width: 500px;
+            height: 500px;
+            margin-left: 10px;
+            margin-top: -270px
+        }
+        .p5{
+            color: rgb(104, 101, 101);
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        .blue{
+            background-color: blue;
+            padding: 100px;
+        }
+        .h-blue{
+            color: white;
+            font-size: 80px;
+            margin-top: -30px;
+        }
+        .p-blue{
+            color: white;
+            margin-top: 10px;
+        }
+        .p1-blue{
+            color: white;
+            font-size: 25px;
+        }
+        .im2{
+            width: 250px;
+            margin-left: 1000px;
+            margin-top: -350px;
+        }
+        .p2-blue{
+            color: white;
+            margin-top: 30px;
+        }
+        .p3-blue{
+            color: white;
+            font-size: 25px;
+        }
+        .im3{
+            width: 250px;
+            margin-left: 1000px;
+            margin-top: -230px;
+        }
+        .p4-blue{
+            color: white;
+        }
+        .p5-blue{
+            color: white;
+            font-size: 25px;
+        }
+        .im4{
+            width: 250px;
+            margin-left: 1000px;
+            margin-top: -180px;
+        }
+        .a1{
+            font-size: 30px;
+            color: white;
+            text-decoration: dashed;
+        }
+        .pp{
+            margin-top: 60px;
+        }
+        .line{
+            width:1px;
+            height: 400px;
+            background-color: white;
+            margin-left: 500px;
+            margin-top: -95px;
+        }
+        .hh{
+            color: white;
+            font-size: 20px;
+            margin-left: 550px;
+            margin-top: -330px;
+        }
+        .h2{
+            color: white;
+            font-size: 20px;
+            margin-left: 550px;
+            margin-top: -10px;
+        }
+        .h3{
+            color: white;
+            font-size: 20px;
+            margin-left: 550px;
+            margin-top: 30px;
+        }
+        .h4{
+            color: white;
+            font-size: 20px;
+            margin-left: 550px;
+            margin-top: -10px   ;
+        }
+        .line2{
+            width: 1px;
+            height: 400px;
+            background-color: white;
+            margin-left: 1000px;
+            margin-top: -209px;
+        }
+        .h5{
+            color: white;
+            font-size: 20px;
+            margin-left: 1050px;
+            margin-top: -330px;
+            
+        }
+        .h6{
+            color: white;
+            font-size: 20px;
+            margin-left: 1050px;
+        }
+        /* ================== MOBILE RESPONSIVE – ზუსტად შენი სტილით ================== */
+@media screen and (max-width: 768px) {
+
+    /* ნავბარი — დარჩეს ჰორიზონტალური, მაგრამ შემცირდეს შრიფტი */
+    .navbar {
+        gap: 30px;
+        margin-right: 30px;
+    }
+    .home, .about-us, .Sign-up {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    /* მთავარი სათაური */
+    .h1 {
+        font-size: 48px;
+        margin-left: 20px;
+        margin-top: 120px;
+        text-align: left;
+    }
+    .p2 {
+        margin-left: 20px;
+        font-size: 28px;
+    }
+    .p3 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    /* დიდი ფოტო + ტექსტი */
+    .im1 {
+        width: 92%;
+        max-width: 500px;
+        height: auto;
+        margin: 50px auto 30px !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+    }
+    .p5 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* ლურჯი სექცია */
+    .blue {
+        padding: 80px 20px;
+        text-align: center;
+    }
+    .h-blue {
+        font-size: 42px;
+        margin-top: 0;
+    }
+    .p-blue, .p1-blue, .p2-blue, .p3-blue, .p4-blue, .p5-blue {
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .p1-blue, .p3-blue, .p5-blue {
+        font-size: 18px;
+    }
+
+    /* გუნდის ფოტოები */
+    .im2, .im3, .im4 {
+        width: 85%;
+        max-width: 380px;
+        height: auto;
+        margin: 40px auto 20px !important;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-radius: 12px;
+    }
+
+    /* ფუტერი — გასუფთავება */
+    .pp {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .a1 {
+        font-size: 28px;
+    }
+    .line, .line2 {
+        display: none; /* ვშლით ვერტიკალურ ხაზებს მობილურზე */
+    }
+    .hh, .h2, .h3, .h4, .h5, .h6 {
+        margin-left: 0 !important;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    .h5, .h6 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h1 { font-size: 38px; margin-top: 100px; }
+    .h-blue { font-size: 36px; }
+    .home, .about-us, .Sign-up { font-size: 16px; }
+}
+.navbar a{
+    color: black;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color: blue;
+
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="navbar">
+            <a class="home" href="index.html">Home</a>
+            <a class="about-us" href="index.html">About us</a>
+            <a class="Sign-up" href="signup.html">Contact</a>
+        </div>
+        <hr>
+    </div>
+    <h1 class="h1">
+        Our Journey
+    </h1>
+    <p class="p2">
+        limitless Horzion
+    </p>
+    <p class="p3">
+        Discover the extraordinary world of drone <br> technology with L. Parkington Tours. We are <br> dedicated to creating innovative aerial solutions for b <br> enthusiasts and professionals, pushing the <br> boundaries of technology to deliver exceptional <br> performance and reliability.
+
+    </p>
+    
+    <img class="im1" src="88aac0_1d5162d4e3964b27924d53ee5339efc5~mv2.jpeg" alt="">
+    <p class="p5">
+        Embark on a journey into the future of flight with <br> L. Parkington Tours. Our cutting-edge technology <br> and revolutionary designs redefine aerial <br> possibilities, offering unparalleled performance <br>  and reliability for all your needs
+
+    </p>
+        
+    <div class="blue">
+        <h1 class="h-blue">
+            Expert Team
+
+        </h1>
+        <p class="p-blue">
+            Daniel Evans
+        </p>
+        <p class="p1-blue">
+            Daniel is our Chief Engineer, bringing over a decade o <br>f experience in drone technology. His expertise in aerial <br> systems design and development has been instrumental <br> in pushing the boundaries of drone innovation at L. <br> Parkington Tours.
+
+        </p>
+        <img class="im2" src="Team_comp-m6no5p6l10.avif" alt="">
+        <hr>
+        <p class="p2-blue">
+            Olivia Martinez
+
+        </p>
+        <p class="p3-blue">
+            Olivia serves as our Head of Operations, overseeing the <br> day-to-day activities and ensuring seamless workflow <br> within the company. With a background in  logistics and b <br> project management, Olivia plays a pivotal role in <br> optimizing our operational efficiency.
+
+        </p>
+        <img class="im3" src="ddd.jpeg" alt="">
+        <hr>
+        <p class="p4-blue">
+            Nathan Thompson
+        </p>
+        <p class="p5-blue">
+            Nathan is our Lead Software Developer, responsible for <br> integrating cutting-edge software solutions into our drone <br> systems. His proficiency in software development and <br> drone programming enhances the functionality and <br> performance of L. Parkington Tours' drones.
+
+        </p>
+        <img class="im4" src="Man with Denim Shirt.avif" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div class="pp">
+            <a  class="a1" href="index.html">L. Parkington</a>
+
+        </div>
+        <div class="line">
+
+        </div>
+        <h1 class="hh">
+            123-456-789
+        </h1>
+        <h1 class="h2">
+            info@mysite.com
+        </h1>
+        <h1 class="h3">
+            500 Terry Francine St. San
+
+        </h1>
+        <h1 class="h4">
+            Francisco, CA 94158
+
+        </h1>
+        <div class="line2">
+
+        </div>
+        <h1 class="h5">
+            
+Accessibility Statement​ <br>Privacy Policy
+        </h1>
+        <h1 class="h6">
+            © 2035 by L. Parkington. <br>Powered and secured by Wix
+
+        </h1>
+    </div>
+</body>
+</html>
